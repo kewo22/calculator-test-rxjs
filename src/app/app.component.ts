@@ -13,7 +13,13 @@ export class AppComponent  {
   }
 
   onOperationClick(op:string) {
-    
+    (document.querySelector('#ans') as HTMLInputElement).value = '';
+    (document.querySelector('#num') as HTMLInputElement).value += op;
+
+    switch(op){
+      // case '+': (document.querySelector('#num') as HTMLInputElement).value +
+    }
+
     (document.querySelector('#ans') as HTMLInputElement).value += (document.querySelector('#num') as HTMLInputElement).value;
   }
 }
